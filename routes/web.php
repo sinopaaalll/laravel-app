@@ -34,7 +34,7 @@ Route::get('/nilai', function () {
     return view('nilai');
 });
 
-Route::get('/daftar_nilai', function () {
+Route::get('/buah', function () {
     return view('daftar_nilai');
 });
 
