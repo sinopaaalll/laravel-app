@@ -45,3 +45,7 @@ urutan route menggunakan controller
 2. App\Http\Controllers\MahasiswaController::class => path controller & nama controllernya
 3. dataMahasiswa => nama fungsi di MahasiswaController
 */
+
+Route::get('/home', function () {
+    return "Ini halaman home";
+});
