@@ -38,8 +38,7 @@ Route::get('/daftar_nilai', function () {
     return view('daftar_nilai');
 });
 
-Route::get('/mahasiswa', [MahasiswaController::class,
-           'dataMahasiswa']);
+Route::get('/mahasiswa', [MahasiswaController::class,'dataMahasiswa']);
 /*
 urutan route menggunakan controller
 1. /mahasiswa => nama route
