@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ Route::get('/daftar_nilai', function () {
     return view('daftar_nilai');
 });
 
-Route::get('/mahasiswa', [App\Http\Controllers\MahasiswaController::class,
+Route::get('/mahasiswa', [MahasiswaController::class,
            'dataMahasiswa']);
 /*
 urutan route menggunakan controller
