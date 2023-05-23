@@ -34,8 +34,8 @@ Route::get('/nilai', function () {
     return view('nilai');
 });
 
-Route::get('/daftar_nilai', function () {
-    return view('daftar_nilai');
+Route::get('/buah', function () {
+    return view('buah');
 });
 
 Route::get('/mahasiswa', [MahasiswaController::class,'dataMahasiswa']);
