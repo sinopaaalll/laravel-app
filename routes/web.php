@@ -15,7 +15,7 @@ use App\Http\Controllers\MahasiswaController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin/home');
 });
 
 Route::get('/salam', function () {
