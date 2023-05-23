@@ -13,6 +13,7 @@ use App\Http\Controllers\MahasiswaController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// ================landing page
 
 Route::get('/', function () {
     return view('landingpage/home');
@@ -29,6 +30,9 @@ Route::get('/about', function () {
 Route::get('/staff', function () {
     return view('landingpage.staff');
 });
+
+// =====================endlandingpage
+
 
 Route::get('/home', function () {
     return view('admin/home');
