@@ -15,6 +15,22 @@ use App\Http\Controllers\MahasiswaController;
 */
 
 Route::get('/', function () {
+    return view('landingpage/home');
+});
+
+Route::get('/beranda', function () {
+    return view('landingpage/home');
+});
+
+Route::get('/about', function () {
+    return view('landingpage.about');
+});
+
+Route::get('/staff', function () {
+    return view('landingpage.staff');
+});
+
+Route::get('/home', function () {
     return view('admin/home');
 });
 
