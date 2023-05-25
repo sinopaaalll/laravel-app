@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JenisController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\MahasiswaController;
 
 /*
@@ -39,6 +41,9 @@ Route::get('/', [BarangController::class,'index']);
 Route::get('/home', function () {
     return view('admin/home');
 });
+
+Route::resource('jenis', JenisController::class);
+Route::resource('produk', ProdukController::class);
 
 Route::get('/salam', function () {
     return 'Selamat pagi kawan-kawan, Semangat belajar laravel nya';
