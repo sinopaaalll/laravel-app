@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StaffController;
 use App\Http\Controllers\MahasiswaController;
 
 /*
@@ -27,9 +28,8 @@ Route::get('/about', function () {
     return view('landingpage.about');
 });
 
-Route::get('/staff', function () {
-    return view('landingpage.staff');
-});
+Route::get('/staff', [StaffController::class,'index']);
+
 
 // =====================endlandingpage
 
@@ -65,3 +65,4 @@ urutan route menggunakan controller
 2. App\Http\Controllers\MahasiswaController::class => path controller & nama controllernya
 3. dataMahasiswa => nama fungsi di MahasiswaController
 */
+

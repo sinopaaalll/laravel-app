@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Staff;
 use App\Http\Requests\StoreStaffRequest;
 use App\Http\Requests\UpdateStaffRequest;
+use Illuminate\Database\Eloquent\Model;
 
 class StaffController extends Controller
 {
@@ -13,7 +14,8 @@ class StaffController extends Controller
      */
     public function index()
     {
-        //
+        $ar_staff = Staff::all();
+        return view('staff.index', compact('ar_staff'));
     }
 
     /**
