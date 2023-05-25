@@ -16,11 +16,10 @@ class StaffSeeder extends Seeder
     {
         for ($i=0; $i < 5; $i++) { 
             Staff::insert([
-                'nip' => Str::random(5),
-                'nama' => Str::random(15),
+                'nip' => 'P'.Str::random(4),
+                'nama' => 'nama_'.Str::random(15),
                 'email' => Str::random(10).'@gmail.com',
                 'posisi' => 'staff',
-                'foto' => Str::random(10).'.jpg',
                 'created_at' => new \DateTime,
             ]);
         }

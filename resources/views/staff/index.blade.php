@@ -14,13 +14,11 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                     <div class="chef-member">
                     <div class="member-img">
-                        <img src="{{ url('landingpage/assets/img/chefs') }}/{{ $staff->foto }}" class="img-fluid" alt="">
-                        <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                        </div>
+                         @empty($staff->foto)
+                            <img src="{{ url('assets/img/no-image.png') }}" class="menu-img img-fluid" alt="">
+                        @else
+                            <img src="{{ url('assets/img') }}/{{ $staff->foto }}" class="menu-img img-fluid" alt="">
+                        @endempty
                     </div>
                     <div class="member-info">
                         <h4>{{ $staff->nama }}</h4>

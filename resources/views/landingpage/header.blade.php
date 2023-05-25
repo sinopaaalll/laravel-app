@@ -9,7 +9,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="{{ url('/beranda') }}">Home</a></li>
+          <li><a href="{{ url('/') }}">Home</a></li>
           <li><a href="{{ url('/about') }}">About</a></li>
           <li><a href="#menu">Produk</a></li>
           <li><a href="{{ url('/staff') }}">Staff</a></li>

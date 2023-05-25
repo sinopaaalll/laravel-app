@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\MahasiswaController;
 
 /*
@@ -16,19 +17,20 @@ use App\Http\Controllers\MahasiswaController;
 */
 // ================landing page
 
-Route::get('/', function () {
-    return view('landingpage/home');
-});
+// Route::get('/', function () {
+//     return view('landingpage/home');
+// });
 
-Route::get('/beranda', function () {
-    return view('landingpage/home');
-});
+// Route::get('/beranda', function () {
+//     return view('landingpage/home');
+// });
 
 Route::get('/about', function () {
     return view('landingpage.about');
 });
 
 Route::get('/staff', [StaffController::class,'index']);
+Route::get('/', [BarangController::class,'index']);
 
 
 // =====================endlandingpage
